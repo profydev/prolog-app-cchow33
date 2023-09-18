@@ -132,8 +132,14 @@
   flex: 1;
 }
 
+.isSidebarCollapsed {
+  transform: rotate(180deg);
+}
+
 .collapseMenuItem {
   display: none;
+
+  // transform: rotate(180deg);
 
   @media (min-width: breakpoint.$desktop) {
     display: flex;
