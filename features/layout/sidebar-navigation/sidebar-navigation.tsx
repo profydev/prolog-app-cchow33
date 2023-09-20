@@ -21,10 +21,9 @@ export function SidebarNavigation() {
   const { isSidebarCollapsed, toggleSidebar } = useContext(NavigationContext);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const openEmail = () => {
+  const sendEmail = () => {
     console.log("opening Outlook Email");
-    // How to link to:
-    <a href="mailto:support@prolog.app.com?subject=Support Request: "></a>;
+    window.open("mailto:support@prolog-app.com?subject=Support Request: ");
   };
 
   return (
@@ -91,7 +90,7 @@ export function SidebarNavigation() {
               iconSrc="/icons/support.svg"
               isCollapsed={isSidebarCollapsed}
               // onClick={() => alert("Support")}
-              onClick={() => openEmail()}
+              onClick={() => sendEmail()}
             />
             <MenuItemButton
               text="Collapse"
