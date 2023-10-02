@@ -32,7 +32,7 @@ describe("Sidebar Navigation", () => {
     });
 
     it("is collapsible", () => {
-      // collapse navigation
+      // collapse the navigation
       cy.get("nav").contains("Collapse").click();
 
       // check that links still exist and are functionable
