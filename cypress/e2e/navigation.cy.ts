@@ -91,5 +91,11 @@ describe("Sidebar Navigation", () => {
       cy.wait(500);
       isNotInViewport("nav");
     });
+
+    it("Support button opens user's email", () => {
+      cy.get("button").contains("Support").click();
+      // cy.get("nav").contains("Support").click();
+      window.open("mailto:support@prolog-app.com?subject=Support Request: ");
+    });
   });
 });
