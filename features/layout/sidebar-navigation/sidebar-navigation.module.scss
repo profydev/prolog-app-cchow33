@@ -132,6 +132,11 @@
   flex: 1;
 }
 
+.isSidebarCollapsed {
+  transform: rotate(180deg);
+  align-items: start;
+}
+
 .collapseMenuItem {
   display: none;
 
